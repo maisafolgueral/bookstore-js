@@ -26,7 +26,7 @@ module.exports = class Database {
     }
   }
 
-  addBookToStock(bookName, quantity) {
+  addBooksToStock(bookName, quantity) {
     const book = this.findBookByName(bookName);
     book?.addToStock(quantity);
   }
@@ -47,7 +47,7 @@ module.exports = class Database {
     }
   }
 
-  addPosterToStock(posterName, quantity) {
+  addPostersToStock(posterName, quantity) {
     const poster = this.findBookByName(posterName);
     poster?.addToStock(quantity);
   }
